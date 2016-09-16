@@ -13,11 +13,11 @@ hotcode-support in ClojureScript.
 
 ## Usage
 
-Set your desired options in `core.cljs`. More options can be found
-[here](https://github.com/hakimel/reveal.js#configuration).
+Set your desired options in [core.cljs](https://github.com/n2o/reveal-cljs/blob/master/src/reveal/core.cljs#L8).
+More options can be found [here](https://github.com/hakimel/reveal.js#configuration).
 
-Create your slides in `slides.cljs` and add them to the list in the
-function `all`.
+Create your slides in [slides.cljs](https://github.com/n2o/reveal-cljs/blob/master/src/reveal/slides.cljs)
+and add them to the list in the function `all`.
 
 Then start the development server as seen in the Setup section.
 
