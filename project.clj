@@ -25,14 +25,14 @@
                 ;; the presence of a :figwheel configuration here
                 ;; will cause figwheel to inject the figwheel client
                 ;; into your build
-                :figwheel {:on-jsload "reveal-cljs.core/on-js-reload"
+                :figwheel {:on-jsload "reveal.core/on-js-reload"
                            ;; :open-urls will pop open your application
                            ;; in the default browser once Figwheel has
                            ;; started and complied your application.
                            ;; Comment this out once it no longer serves you.
                            :open-urls ["http://localhost:3449/index.html"]}
 
-                :compiler {:main reveal-cljs.core
+                :compiler {:main reveal.core
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/reveal_cljs.js"
                            :output-dir "resources/public/js/compiled/out"
@@ -46,7 +46,7 @@
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/reveal_cljs.js"
-                           :main reveal-cljs.core
+                           :main reveal.core
                            :optimizations :advanced
                            :pretty-print false}}]}
 
@@ -92,7 +92,7 @@
   ;; https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl
 
 
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.7.2"]
+  :profiles {:dev {:dependencies [[binaryage/devtools "0.8.1"]
                                   [figwheel-sidecar "0.5.7"]
                                   [com.cemerick/piggieback "0.2.1"]]
                    ;; need to add dev source path here to get user.clj loaded
