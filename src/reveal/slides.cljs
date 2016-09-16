@@ -21,4 +21,5 @@
 (defn all
   "Add here all slides you want to see in your presentation."
   []
-  [slide-1 slide-2])
+  [slide-1
+   slide-2])

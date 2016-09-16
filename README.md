@@ -1,10 +1,25 @@
 # reveal-cljs
 
-FIXME: Write a one-line description of your library/project.
+Inspired by the great work on  [reveal.js](https://github.com/hakimel/reveal.js/) 
+and the dislike towards JavaScript, this small project was created to
+provide a simple wrapper in ClojureScript to create awesome presentations.
 
-## Overview
+It uses Hiccup-syntax for templating, which makes it very easy to create
+slides.
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+Currently, there is no speaker-mode etc. available, since this project uses
+[lein-figwheel](https://github.com/bhauman/lein-figwheel) to get
+hotcode-support in ClojureScript.
+
+## Usage
+
+Set your desired options in `core.cljs`. More options can be found
+[here](https://github.com/hakimel/reveal.js#configuration).
+
+Create your slides in `slides.cljs` and add them to the list in the
+function `all`.
+
+Then start the development server as seen in the Setup section.
 
 ## Setup
 
@@ -14,26 +29,14 @@ To get an interactive development environment run:
 
 and open your browser at [localhost:3449](http://localhost:3449/).
 This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
-
-    (js/alert "Am I connected?")
-
-and you should see an alert in the browser window.
+need to reload. 
 
 To clean all compiled files:
 
     lein clean
 
-To create a production build run:
-
-    lein do clean, cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
-
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2016 Christian Meter
 
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+Distributed under the Eclipse Public License either version 1.0.
