@@ -2,15 +2,21 @@
 
 (def slide-1
   [:section
-   [:ul
-    [:li "Das"]
-    [:li "ist"]
-    [:li "für"]
-    [:li "mich"]
-    [:li "Abfall"]]])
+   [:h1 "Reveal-cljs"]
+   [:h3 "The ClojureScript-Wrapper for reveal.js"]
+   [:p "Based on "
+    [:a {:href "http://lab.hakim.se/reveal-js/"} "reveal.js"]]])
 
 (def slide-2
-  [:section "Dies ist der Tag, an dem ihr Capt'n Jack Sparrow fast gefangen hättet!"])
+  [:section
+   [:section
+    [:h2 "Vertical Slides"]
+    [:p "Generate your slides "
+     [:a {:href "https://github.com/teropa/hiccups"} "with Hiccups"]]]
+   [:section
+    [:h2 "Tutorial"]
+    [:p "Wath the full tutorial of reveal.js "
+     [:a {:href "https://github.com/hakimel/reveal.js/blob/master/demo.html"} "on this site"]]]])
 
 (defn all
   "Add here all slides you want to see in your presentation."

@@ -1,6 +1,7 @@
 (ns reveal.core
   (:require-macros [hiccups.core :as hiccups :refer [html]])
   (:require [clojure.string :refer [join]]
+            [goog.dom :as gdom]
             [hiccups.runtime :as hiccupsrt]
             [reveal.slides :as slides]))
 
@@ -22,7 +23,9 @@
   "Get all slides, set them as innerHTML and reinitialize Reveal.js"
   []
   (set! (.. (.getElementById js/document "slides") -innerHTML) (convert))
-  (.initialize js/Reveal options))
+  (.initialize js/Reveal options)
+  (.right js/Reveal)                                        ; Dirty workaround...
+  (.left js/Reveal))
 (main)
 
 (defn on-js-reload []
