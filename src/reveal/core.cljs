@@ -1,22 +1,29 @@
 (ns reveal.core
   (:require-macros [hiccups.core :as hiccups :refer [html]])
-  (:require [hiccups.runtime :as hiccupsrt]))
-(enable-console-print!)
+  (:require [clojure.string :refer [join]]
+            [hiccups.runtime :as hiccupsrt]
+            [reveal.slides :as slides]))
+
+(def options #js {:controls    true
+                  :progress    true
+                  :transition  "default"                    ; e.g. none/fade/slide/convex/concave/zoom
+                  :slideNumber false})
+
+
+;;;; You do not need to change anything below this comment
+
+(defn convert
+  "Get list of all slides and convert them to html strings."
+  []
+  (let [slides (slides/all)]
+    (join (map #(html %) slides))))
 
 (defn main
   "Get all slides, set them as innerHTML and reinitialize Reveal.js"
   []
-  (let [slides (html [:div.slides [:section "Ahoiasdasda"]])]
-    (set! (.. (.getElementById js/document "app") -innerHTML) slides))
-  (.initialize js/Reveal))
+  (set! (.. (.getElementById js/document "slides") -innerHTML) (convert))
+  (.initialize js/Reveal options))
 (main)
 
-;; define your app data so that it doesn't get over-written on reload
-(defonce app-state (atom {:text "Hello world!"}))
-
 (defn on-js-reload []
-  ;; optionally touch your app-state to force rerendering depending on
-  ;; your application
-  ;; (swap! app-state update-in [:__figwheel_counter] inc)
-  (main)
-)
+  (main))
