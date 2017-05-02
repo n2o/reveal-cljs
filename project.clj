@@ -1,4 +1,4 @@
-(defproject reveal-cljs "0.1.0-SNAPSHOT"
+(defproject reveal-cljs "0.1.16"
   :description "A reveal.js wrapper in ClojureScript."
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
