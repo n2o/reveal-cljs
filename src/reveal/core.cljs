@@ -5,9 +5,11 @@
             [hiccups.runtime :as hiccupsrt]
             [reveal.slides :as slides]))
 
+
+;; When changing comments, you manually need to refresh your browser
 (def options #js {:controls    true
                   :progress    true
-                  :transition  "default"                    ; e.g. none/fade/slide/convex/concave/zoom
+                  :transition  "fade"                    ; e.g. none/fade/slide/convex/concave/zoom
                   :slideNumber false})
 
 
