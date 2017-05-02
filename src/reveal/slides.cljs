@@ -15,7 +15,7 @@
      [:a {:href "https://github.com/teropa/hiccups"} "with Hiccups"]]]
    [:section
     [:h2 "Tutorial"]
-    [:p "Wath the full tutorial of reveal.js "
+    [:p "Watch the full tutorial of reveal.js "
      [:a {:href "https://github.com/hakimel/reveal.js/blob/master/demo.html"} "on this site"]]]])
 
 (defn all
