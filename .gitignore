@@ -35,3 +35,4 @@ figwheel_server.log
 bower_components
 compiled
 .sass-cache
+.#*
