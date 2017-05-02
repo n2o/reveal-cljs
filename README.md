@@ -13,15 +13,26 @@ hotcode-support in ClojureScript.
 
 ## Usage
 
-Set your desired options in [core.cljs](https://github.com/n2o/reveal-cljs/blob/master/src/reveal/core.cljs#L8).
-More options can be found [here](https://github.com/hakimel/reveal.js#configuration).
+Set your desired options in
+[core.cljs](https://github.com/n2o/reveal-cljs/blob/master/src/reveal/core.cljs#L10).
+More options can be found
+[here](https://github.com/hakimel/reveal.js#configuration).
 
-Create your slides in [slides.cljs](https://github.com/n2o/reveal-cljs/blob/master/src/reveal/slides.cljs)
+Create your slides in
+[slides.cljs](https://github.com/n2o/reveal-cljs/blob/master/src/reveal/slides.cljs)
 and add them to the list in the function `all`.
 
 Then start the development server as seen in the Setup section.
 
-## Setup
+## Installation & Setup
+
+Download the dependency reveal.js (specified in `bower.json`) with:
+
+    bower install
+    
+or clone the repository:
+
+    git clone git@github.com:hakimel/reveal.js.git resources/public/bower_components/reveal.js
 
 To get an interactive development environment run:
 
@@ -37,6 +48,6 @@ To clean all compiled files:
 
 ## License
 
-Copyright © 2016 Christian Meter
+Copyright © 2016-2017 Christian Meter
 
-Distributed under the Eclipse Public License either version 1.0.
+Distributed under the Eclipse Public License version 1.0.
