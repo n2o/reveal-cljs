@@ -1,5 +1,5 @@
 (defproject reveal-cljs "0.1.0-SNAPSHOT"
-  :description "A reveal.js wrapper for ClojureScript."
+  :description "A reveal.js wrapper in ClojureScript."
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -7,12 +7,14 @@
   :min-lein-version "2.6.1"
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.229"]
-                 [org.clojure/core.async "0.2.391" :exclusions [org.clojure/tools.reader]]
+                 [org.clojure/clojurescript "1.9.521"]
+                 [org.clojure/core.async "0.3.442" :exclusions [org.clojure/tools.reader]]
                  [hiccups "0.3.0"]]
 
-  :plugins [[lein-figwheel "0.5.7"]
-            [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]]
+  :plugins [[lein-ancient "0.6.10"]
+            [lein-figwheel "0.5.10"]
+            [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]
+            [lein-set-version "0.4.1"]]
 
   :source-paths ["src"]
 
@@ -92,8 +94,8 @@
   ;; https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl
 
 
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.8.1"]
-                                  [figwheel-sidecar "0.5.7"]
+  :profiles {:dev {:dependencies [[binaryage/devtools "0.9.4"]
+                                  [figwheel-sidecar "0.5.10"]
                                   [com.cemerick/piggieback "0.2.1"]]
                    ;; need to add dev source path here to get user.clj loaded
                    :source-paths ["src" "dev"]
