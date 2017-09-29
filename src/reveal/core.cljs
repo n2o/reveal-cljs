@@ -26,8 +26,7 @@
   []
   (set! (.. (.getElementById js/document "slides") -innerHTML) (convert))
   (.initialize js/Reveal options)
-  (.right js/Reveal)                                        ; Dirty workaround...
-  (.left js/Reveal))
+  (.setState js/Reveal (.getState js/Reveal)))
 (main)
 
 (defn on-js-reload []
