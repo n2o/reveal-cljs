@@ -6,13 +6,13 @@
 
   :min-lein-version "2.6.1"
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.521"]
-                 [org.clojure/core.async "0.3.442" :exclusions [org.clojure/tools.reader]]
+  :dependencies [[org.clojure/clojure "1.9.0-beta1"]
+                 [org.clojure/clojurescript "1.9.908"]
+                 [org.clojure/core.async "0.3.443" :exclusions [org.clojure/tools.reader]]
                  [hiccups "0.3.0"]]
 
   :plugins [[lein-ancient "0.6.10"]
-            [lein-figwheel "0.5.10"]
+            [lein-figwheel "0.5.13"]
             [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]
             [lein-set-version "0.4.1"]]
 
@@ -39,6 +39,7 @@
                            :output-to "resources/public/js/compiled/reveal_cljs.js"
                            :output-dir "resources/public/js/compiled/out"
                            :source-map-timestamp true
+                           :parallel-build true
                            ;; To console.log CLJS data-structures make sure you enable devtools in Chrome
                            ;; https://github.com/binaryage/cljs-devtools
                            :preloads [devtools.preload]}}
@@ -95,8 +96,8 @@
 
 
   :profiles {:dev {:dependencies [[binaryage/devtools "0.9.4"]
-                                  [figwheel-sidecar "0.5.10"]
-                                  [com.cemerick/piggieback "0.2.1"]]
+                                  [figwheel-sidecar "0.5.13"]
+                                  [com.cemerick/piggieback "0.2.2"]]
                    ;; need to add dev source path here to get user.clj loaded
                    :source-paths ["src" "dev"]
                    ;; for CIDER
