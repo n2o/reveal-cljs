@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "reveal.js": "hakimel/reveal.js#3.4.1"
+    "reveal.js": "hakimel/reveal.js#3.5.0"
   }
 }
