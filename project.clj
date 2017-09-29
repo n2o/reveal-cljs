@@ -1,8 +1,8 @@
 (defproject reveal-cljs "0.1.16"
   :description "A reveal.js wrapper in ClojureScript."
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :url "https://github.com/n2o/reveal-cljs"
+  :license {:name "MIT"
+            :url  "https://choosealicense.com/licenses/mit/"}
 
   :min-lein-version "2.6.1"
 

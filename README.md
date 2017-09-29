@@ -50,4 +50,4 @@ To clean all compiled files:
 
 Copyright © 2016-2017 Christian Meter
 
-Distributed under the Eclipse Public License version 1.0.
+Distributed under the [MIT](LICENSE) License version.
