@@ -6,9 +6,9 @@
 
   :min-lein-version "2.6.1"
 
-  :dependencies [[org.clojure/clojure "1.9.0-beta1"]
-                 [org.clojure/clojurescript "1.9.908"]
-                 [org.clojure/core.async "0.3.443" :exclusions [org.clojure/tools.reader]]
+  :dependencies [[org.clojure/clojure "1.9.0"]
+                 [org.clojure/clojurescript "1.9.946"]
+                 [org.clojure/core.async "0.3.465" :exclusions [org.clojure/tools.reader]]
                  [hiccups "0.3.0"]]
 
   :plugins [[lein-ancient "0.6.10"]
@@ -106,4 +106,5 @@
                                   :init (set! *print-length* 50)
                                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}}
 
+  :jvm-opts ["--add-modules" "java.xml.bind"]
 )
