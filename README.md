@@ -11,6 +11,10 @@ Currently, there is no speaker-mode etc. available, since this project uses
 [lein-figwheel](https://github.com/bhauman/lein-figwheel) to get
 hotcode-support in ClojureScript.
 
+## Requirements
+
+This projects requires **JDK 9** to work properly.
+
 ## Usage
 
 Set your desired options in
