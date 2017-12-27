@@ -1,8 +1,8 @@
 # reveal-cljs
 
-Inspired by the great work on  [reveal.js](https://github.com/hakimel/reveal.js/) 
-and the dislike towards JavaScript, this small project was created to
-provide a simple wrapper in ClojureScript to create awesome presentations.
+Inspired by the great work on [reveal.js](https://github.com/hakimel/reveal.js/)
+and the dislike towards JavaScript, this small project was created to provide a
+simple wrapper in ClojureScript to create awesome presentations.
 
 It uses Hiccup-syntax for templating, which makes it very easy to create
 slides.
@@ -13,7 +13,9 @@ hotcode-support in ClojureScript.
 
 ## Requirements
 
-This projects requires **JDK 9** to work properly.
+All common JDKs should work. I used a workaround [from this
+issue](https://github.com/bhauman/lein-figwheel/issues/612) to make it
+compatible to JDK9 until Clojure and ClojureScript are fully JDK9-compatible.
 
 ## Usage
 
