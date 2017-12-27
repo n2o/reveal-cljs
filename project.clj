@@ -1,4 +1,4 @@
-(defproject reveal-cljs "0.1.16"
+(defproject reveal-cljs "0.1.27"
   :description "A reveal.js wrapper in ClojureScript."
   :url "https://github.com/n2o/reveal-cljs"
   :license {:name "MIT"
