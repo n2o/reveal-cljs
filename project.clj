@@ -106,5 +106,10 @@
                                   :init (set! *print-length* 50)
                                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}}
 
-  :jvm-opts ["--add-modules" "java.xml.bind"]
+  ;; Add java.xml.bind if JDK9 is used
+  :jvm-opts ~(let [version (System/getProperty "java.version")
+                   [major _ _] (clojure.string/split version #"\.")]
+               (if (>= (Integer. major) 9)
+                 ["--add-modules" "java.xml.bind"]
+                 []))
 )
