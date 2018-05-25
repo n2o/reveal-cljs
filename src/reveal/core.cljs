@@ -7,10 +7,12 @@
 
 
 ;; When changing comments, you manually need to refresh your browser
-(def options #js {:controls    true
-                  :progress    true
-                  :transition  "fade"                    ; e.g. none/fade/slide/convex/concave/zoom
-                  :slideNumber false})
+(def options (clj->js {:controls    true
+                       :progress    true
+                       :transition  "fade"                    ; e.g. none/fade/slide/convex/concave/zoom
+                       :slideNumber false
+                       :dependencies  [{:src "bower_components/reveal.js/plugin/notes/notes.js"
+                                        :async true}]}))
 
 
 ;;;; You do not need to change anything below this comment
