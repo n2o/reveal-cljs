@@ -7,9 +7,9 @@ simple wrapper in ClojureScript to create awesome presentations.
 It uses Hiccup-syntax for templating, which makes it very easy to create
 slides.
 
-Currently, there is no speaker-mode etc. available, since this project uses
-[lein-figwheel](https://github.com/bhauman/lein-figwheel) to get
-hotcode-support in ClojureScript.
+Start the project with `lein figwheel` and see your live slides. Start
+*speaker-mode* by pressing <kbd>s</kbd> in the slides in your browser (thanks to
+@kazesberger)
 
 ## Requirements
 
@@ -54,6 +54,6 @@ To clean all compiled files:
 
 ## License
 
-Copyright © 2016-2017 Christian Meter
+Copyright © 2016-2018 Christian Meter and Contributors
 
 Distributed under the [MIT](LICENSE) License version.
