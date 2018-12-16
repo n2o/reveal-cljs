@@ -1,5 +1,7 @@
 # reveal-cljs
 
+[![CircleCI](https://circleci.com/gh/n2o/reveal-cljs.svg?style=svg)](https://circleci.com/gh/n2o/reveal-cljs)
+
 Inspired by the great work on [reveal.js](https://github.com/hakimel/reveal.js/)
 and the dislike towards JavaScript, this small project was created to provide a
 simple wrapper in ClojureScript to create awesome presentations.
