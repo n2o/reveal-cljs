@@ -27,4 +27,4 @@ jobs:
             - ~/.m2
           key: v1-dependencies-{{ checksum "project.clj" }}
         
-      - run: lein cljsbuild once min
+      - run: lein test
