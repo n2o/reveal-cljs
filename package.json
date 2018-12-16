@@ -1,0 +1,16 @@
+{
+  "name": "reveal-cljs",
+  "version": "1.0.0",
+  "description": "A ClojureScript wrapper for reveal.js",
+  "main": "reveal.core",
+  "dependencies": {
+    "reveal.js": "hakimel/reveal.js#3.7.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:n2o/reveal-cljs.git"
+  },
+  "author": "Christian Meter",
+  "license": "MIT"
+}

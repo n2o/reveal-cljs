@@ -32,7 +32,8 @@ figwheel_server.log
 *.iml
 *.css
 *.css.map
-bower_components
+node_modules
 compiled
 .sass-cache
 .#*
+*.log

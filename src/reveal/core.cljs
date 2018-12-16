@@ -11,7 +11,7 @@
                        :progress    true
                        :transition  "fade"                    ; e.g. none/fade/slide/convex/concave/zoom
                        :slideNumber false
-                       :dependencies  [{:src "bower_components/reveal.js/plugin/notes/notes.js"
+                       :dependencies  [{:src "node_modules/reveal.js/plugin/notes/notes.js"
                                         :async true}]}))
 
 

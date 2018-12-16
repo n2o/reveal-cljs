@@ -17,6 +17,9 @@ All common JDKs should work. I used a workaround [from this
 issue](https://github.com/bhauman/lein-figwheel/issues/612) to make it
 compatible to JDK9 until Clojure and ClojureScript are fully JDK9-compatible.
 
+Also [Leiningen](https://leiningen.org/) and [yarn](https://yarnpkg.com/en/) /
+[npm](https://www.npmjs.com/) are necessary to build the project.
+
 ## Usage
 
 Set your desired options in
@@ -34,11 +37,11 @@ Then start the development server as seen in the Setup section.
 
 Download the dependency reveal.js (specified in `bower.json`) with:
 
-    bower install
+    yarn install
     
 or clone the repository:
 
-    git clone git@github.com:hakimel/reveal.js.git resources/public/bower_components/reveal.js
+    git clone git@github.com:hakimel/reveal.js.git resources/public/node_modules/reveal.js
 
 To get an interactive development environment run:
 
