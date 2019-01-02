@@ -37,7 +37,7 @@ Then start the development server as seen in the Setup section.
 
 ## Installation & Setup
 
-Download the dependency reveal.js (specified in `bower.json`) with:
+Download the dependency reveal.js (specified in `package.json`) with:
 
     yarn install
     
@@ -51,7 +51,9 @@ To get an interactive development environment run:
 
 and open your browser at [localhost:3449](http://localhost:3449/).
 This will auto compile and send all changes to the browser without the
-need to reload. 
+need to reload.
+
+Open Speaker Notes by pressing <kbd>s</kbd>.
 
 To clean all compiled files:
 
@@ -59,6 +61,6 @@ To clean all compiled files:
 
 ## License
 
-Copyright © 2016-2018 Christian Meter and Contributors
+Copyright © 2016-2019 Christian Meter and Contributors
 
 Distributed under the [MIT](LICENSE) License version.
