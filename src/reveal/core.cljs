@@ -11,11 +11,12 @@
                        :progress    true
                        :transition  "fade"                    ; e.g. none/fade/slide/convex/concave/zoom
                        :slideNumber false
-                       :dependencies  [{:src "node_modules/reveal.js/plugin/notes/notes.js"
-                                        :async true}]}))
+                       :dependencies [{:src "node_modules/reveal.js/plugin/notes/notes.js"
+                                       :async true}]}))
 
 
-;;;; You do not need to change anything below this comment
+;; -----------------------------------------------------------------------------
+;; You do not need to change anything below this comment
 
 (defn convert
   "Get list of all slides and convert them to html strings."
@@ -26,10 +27,7 @@
 (defn main
   "Get all slides, set them as innerHTML and reinitialize Reveal.js"
   []
-  (set! (.. (.getElementById js/document "slides") -innerHTML) (convert))
+  (set! (.. (gdom/getElement "slides") -innerHTML) (convert))
   (.initialize js/Reveal options)
   (.setState js/Reveal (.getState js/Reveal)))
 (main)
-
-(defn on-js-reload []
-  (main))

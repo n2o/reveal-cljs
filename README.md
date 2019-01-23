@@ -6,21 +6,19 @@ Inspired by the great work on [reveal.js](https://github.com/hakimel/reveal.js/)
 and the dislike towards JavaScript, this small project was created to provide a
 simple wrapper in ClojureScript to create awesome presentations.
 
-It uses Hiccup-syntax for templating, which makes it very easy to create
-slides.
+It uses Hiccup-syntax for templating, which makes it very easy to create slides.
 
-Start the project with `lein figwheel` and see your live slides. Start
-*speaker-mode* by pressing <kbd>s</kbd> in the slides in your browser (thanks to
-@kazesberger)
+Start the project with `clj -m figwheel.main -b dev -r` and see your live
+slides. Start *speaker-mode* by pressing <kbd>s</kbd> in the slides in your
+browser (thanks to @kazesberger)
 
 ## Requirements
 
-All common JDKs should work. I used a workaround [from this
-issue](https://github.com/bhauman/lein-figwheel/issues/612) to make it
-compatible to JDK9 until Clojure and ClojureScript are fully JDK9-compatible.
+Tested with JDK 8 and JDK 11.
 
-Also [Leiningen](https://leiningen.org/) and [yarn](https://yarnpkg.com/en/) /
-[npm](https://www.npmjs.com/) are necessary to build the project.
+Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started) and
+[yarn](https://yarnpkg.com/en/) / [npm](https://www.npmjs.com/) are necessary to
+build and run the project.
 
 ## Usage
 
@@ -47,17 +45,13 @@ or clone the repository:
 
 To get an interactive development environment run:
 
-    lein figwheel
+    clj -m figwheel.main -b dev -r
 
-and open your browser at [localhost:3449](http://localhost:3449/).
+which opens your browser at [localhost:9500](http://localhost:9500/).
 This will auto compile and send all changes to the browser without the
 need to reload.
 
 Open Speaker Notes by pressing <kbd>s</kbd>.
-
-To clean all compiled files:
-
-    lein clean
 
 ## License
 
