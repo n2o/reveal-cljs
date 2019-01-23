@@ -1,5 +1,8 @@
 # reveal-cljs
 
+![](https://img.shields.io/github/release/n2o/reveal-cljs.svg)
+![](https://img.shields.io/github/license/n2o/reveal-cljs.svg)
+
 Inspired by the great work on [reveal.js](https://github.com/hakimel/reveal.js/)
 and the dislike towards JavaScript, this small project was created to provide a
 simple wrapper in ClojureScript to create awesome presentations.
