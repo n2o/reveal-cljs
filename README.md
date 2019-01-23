@@ -45,9 +45,14 @@ To get an interactive development environment run:
 
     clj -m figwheel.main -b dev -r
 
-which opens your browser at [localhost:9500](http://localhost:9500/).
-This will auto compile and send all changes to the browser without the
-need to reload.
+`-b` indicates the targeted build `dev`, which can be configured in
+`dev.cljs.edn`.
+
+`-r` opens a REPL.
+
+Figwheel opens your browser at [localhost:9500](http://localhost:9500/). This
+will auto compile and send all changes to the browser without the need to
+reload.
 
 Open Speaker Notes by pressing <kbd>s</kbd>.
 
