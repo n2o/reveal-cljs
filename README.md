@@ -10,6 +10,8 @@ Start the project with `clj -m figwheel.main -b dev -r` and see your live
 slides. Start *speaker-mode* by pressing <kbd>s</kbd> in the slides in your
 browser (thanks to @kazesberger)
 
+![sample.png](img/sample.png)
+
 ## Requirements
 
 Tested with JDK 8 and JDK 11.
