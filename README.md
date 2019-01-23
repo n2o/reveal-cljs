@@ -1,7 +1,7 @@
 # reveal-cljs
 
-![https://github.com/n2o/reveal-cljs/releases](https://img.shields.io/github/release/n2o/reveal-cljs.svg)
-![https://github.com/n2o/reveal-cljs/blob/master/LICENSE](https://img.shields.io/github/license/n2o/reveal-cljs.svg)
+[![https://github.com/n2o/reveal-cljs/releases](https://img.shields.io/github/release/n2o/reveal-cljs.svg)](https://github.com/n2o/reveal-cljs/releases)
+[![https://github.com/n2o/reveal-cljs/blob/master/LICENSE](https://img.shields.io/github/license/n2o/reveal-cljs.svg)](https://github.com/n2o/reveal-cljs/blob/master/LICENSE)
 
 Inspired by the great work on [reveal.js](https://github.com/hakimel/reveal.js/)
 and the dislike towards JavaScript, this small project was created to provide a
