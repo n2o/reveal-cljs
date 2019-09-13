@@ -17,7 +17,7 @@ browser (thanks to @kazesberger)
 
 ## Requirements
 
-Tested with JDK 8 and JDK 11.
+Tested with AdoptOpenJDK 12.
 
 Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started) and
 [yarn](https://yarnpkg.com/en/) / [npm](https://www.npmjs.com/) are necessary to
