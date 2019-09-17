@@ -5,4 +5,6 @@
         org.clojure/core.async {:mvn/version "0.4.500"}
         hiccups {:mvn/version "0.3.0"}}
  :paths ["src" "target" "resources"]
- :aliases {:fig {:main-opts ["-m" "figwheel.main"]}}}
+ :aliases {:fig {:main-opts ["-m" "figwheel.main" "-b" "dev" "--repl"]}
+           :fig/simple {:main-opts ["-m" "figwheel.main" "-O" "simple" "-bo" "dev"]}
+           :fig/min {:main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]}}}

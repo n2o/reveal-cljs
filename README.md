@@ -9,7 +9,7 @@ simple wrapper in ClojureScript to create awesome presentations.
 
 It uses Hiccup-syntax for templating, which makes it very easy to create slides.
 
-Start the project with `clj -m figwheel.main -b dev -r` and see your live
+Start the project with `make repl` and see your live
 slides. Start *speaker-mode* by pressing <kbd>s</kbd> in the slides in your
 browser (thanks to @kazesberger)
 
@@ -19,8 +19,8 @@ browser (thanks to @kazesberger)
 
 Tested with AdoptOpenJDK 12.
 
-Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started) and
-[yarn](https://yarnpkg.com/en/) / [npm](https://www.npmjs.com/) are necessary to
+Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started), 
+[yarn](https://yarnpkg.com/en/) / [npm](https://www.npmjs.com/) and `make` are necessary to
 build and run the project.
 
 ## Usage
@@ -38,9 +38,15 @@ Then start the development server as seen in the Setup section.
 
 ## Installation & Setup
 
+Everything in one command:
+
+    make
+    
+Or:
+
 Download the dependency reveal.js (specified in `package.json`) with:
 
-    yarn install
+    make install
     
 or clone the repository:
 
@@ -48,12 +54,7 @@ or clone the repository:
 
 To get an interactive development environment run:
 
-    clj -m figwheel.main -b dev -r
-
-`-b` indicates the targeted build `dev`, which can be configured in
-`dev.cljs.edn`.
-
-`-r` opens a REPL.
+    make repl
 
 Figwheel opens your browser at [localhost:9500](http://localhost:9500/). This
 will auto compile and send all changes to the browser without the need to
