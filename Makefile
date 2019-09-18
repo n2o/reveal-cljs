@@ -20,3 +20,7 @@ web: install
 	@echo ":: Copy generated assets to resources-folder"
 	cp target/public/cljs-out/dev-main.js resources/public/cljs-out
 	@echo ":: Now open 'resources/public/index.html' to find the presentation"
+
+ancient:
+	@echo ":: Check for old dependencies"
+	clojure -Sdeps '{:deps {olical/depot {:mvn/version "1.8.4"}}}' -m depot.outdated.main
