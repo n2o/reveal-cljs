@@ -20,7 +20,7 @@ browser.
 Tested with AdoptOpenJDK 12.
 
 Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started), 
-[yarn](https://yarnpkg.com/en/) / [npm](https://www.npmjs.com/) and `make` are necessary to
+[yarn](https://yarnpkg.com/en/) and `make` are necessary to
 build and run the project.
 
 ## Usage
