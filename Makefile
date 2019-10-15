@@ -16,7 +16,7 @@ clean:
 web: install
 	mkdir -p resources/public/cljs-out
 	@echo ":: Build Project"
-	clj -A:fig/simple
+	clojure -A:fig/simple
 	@echo ":: Copy generated assets to resources-folder"
 	cp target/public/cljs-out/dev-main.js resources/public/cljs-out
 	@echo ":: Now open 'resources/public/index.html' to find the presentation"
