@@ -65,7 +65,7 @@ Open Speaker Notes by pressing <kbd>s</kbd>.
 ## Compile and Prepare for Deployment
 
 You can compile the cljs-Code and put the assets together to make your
-presentation ready to be deployed on a webserver (e.g. on GitHub Pages.
+presentation ready to be deployed on a webserver (e.g. on GitHub Pages).
 By following these steps, you can publish the presentation on a regular
 server, which only needs to serve HTML, CSS and JavaScript Files. This
 is all put into one task:
