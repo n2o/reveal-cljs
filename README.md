@@ -17,7 +17,7 @@ browser.
 
 ## Requirements
 
-Tested with AdoptOpenJDK 12.
+Tested with AdoptOpenJDK 13.
 
 Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started), 
 [yarn](https://yarnpkg.com/en/) and `make` are necessary to

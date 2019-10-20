@@ -3,7 +3,7 @@
 (def slide-1
   [:section
    [:h1 "reveal-cljs"]
-   [:h3 "The ClojureScript-Wrapper for reveal.js"]
+   [:h5 "Create awesome Web-Presentations with ClojureScript"]
    [:p "Based on "
     [:a {:href "http://lab.hakim.se/reveal-js/"} "reveal.js"]]])
 
