@@ -1,0 +1,19 @@
+name: Clojure CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: action/setup-java@v1
+        with:
+          java-version: '13'
+      - name: Setup Clojure
+        uses: DeLaGuardo/setup-clojure@2.0
+      - name: Install dependencies
+        run: lein deps
+      - name: Build Project
+        run: clojure -A:fig/simple
