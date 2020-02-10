@@ -21,6 +21,6 @@ web: install
 	cp target/public/cljs-out/dev-main.js resources/public/cljs-out
 	@echo ":: Now open 'resources/public/index.html' to find the presentation"
 
-ancient:
+outdated:
 	@echo ":: Check for old dependencies"
-	clojure -Sdeps '{:deps {olical/depot {:mvn/version "1.8.4"}}}' -m depot.outdated.main
+	clojure -Aoutdated -a outdated
