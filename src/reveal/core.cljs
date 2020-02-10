@@ -1,8 +1,8 @@
 (ns reveal.core
-  (:require-macros [hiccups.core :as hiccups :refer [html]])
+  (:require-macros [hiccups.core :refer [html]])
   (:require [clojure.string :refer [join]]
             [goog.dom :as gdom]
-            [hiccups.runtime :as hiccupsrt]
+            [hiccups.runtime]
             [reveal.slides :as slides]))
 
 
