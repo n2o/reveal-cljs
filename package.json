@@ -4,7 +4,7 @@
   "description": "A ClojureScript wrapper for reveal.js",
   "main": "reveal.core",
   "dependencies": {
-    "reveal.js": "hakimel/reveal.js#3.8.0"
+    "reveal.js": "hakimel/reveal.js#3.9.2"
   },
   "devDependencies": {},
   "repository": {
