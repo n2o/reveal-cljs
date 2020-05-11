@@ -17,9 +17,10 @@ browser.
 
 ## Requirements
 
-Tested with AdoptOpenJDK 13.
+Tested with AdoptOpenJDK 14, see CI Build Job for more details in the
+environment.
 
-Also [Clojure's CLI Tools](https://clojure.org/guides/getting_started), 
+A JDK, [Clojure's CLI Tools](https://clojure.org/guides/getting_started), 
 [yarn](https://yarnpkg.com/en/) and `make` are necessary to
 build and run the project.
 
