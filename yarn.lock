@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-reveal.js@hakimel/reveal.js#3.8.0:
-  version "3.8.0"
-  resolved "https://codeload.github.com/hakimel/reveal.js/tar.gz/3da09f1fef1fa3c140d2daa5bdee2a32683dd964"
+reveal.js@hakimel/reveal.js#3.9.2:
+  version "3.9.2"
+  resolved "https://codeload.github.com/hakimel/reveal.js/tar.gz/94d98ff7d89e35c7d5b289ba387cdb0d42b30793"

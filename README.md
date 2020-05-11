@@ -76,6 +76,6 @@ Follow the steps on the terminal to find your prepared presentation.
 
 ## License
 
-Copyright © 2016-2019 Christian Meter and Contributors
+Copyright © 2016 – 2020 Christian Meter and Contributors
 
-Distributed under the [MIT](LICENSE) License version.
+Distributed under the [MIT](LICENSE) License.
