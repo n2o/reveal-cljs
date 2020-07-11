@@ -7,12 +7,13 @@
 
 
 ;; When changing comments, you manually need to refresh your browser
-(def options (clj->js {:controls    true
-                       :progress    true
-                       :transition  "fade"                    ; e.g. none/fade/slide/convex/concave/zoom
-                       :slideNumber false
-                       :dependencies [{:src "node_modules/reveal.js/plugin/notes/notes.js"
-                                       :async true}]}))
+(def options (clj->js {:hash true
+                       :controls true
+                       :controlsTutorial true
+                       :progress false
+                       :transition "fade"                   ; e.g. none/fade/slide/convex/concave/zoom
+                       :slideNumber "c"
+                       :plugins [js/RevealNotes]}))
 
 
 ;; -----------------------------------------------------------------------------
