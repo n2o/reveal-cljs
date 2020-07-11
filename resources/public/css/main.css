@@ -1,0 +1,19 @@
+.statement {
+    color: #ffc107;
+}
+
+.issue {
+    color: #546e7a;
+}
+
+.pro {
+    color: #81c784;
+}
+
+.con {
+    color: #f44336;
+}
+
+.mr {
+    margin-right: 0.5em;
+}
