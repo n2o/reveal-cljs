@@ -1,5 +1,6 @@
 # reveal-cljs
 
+![Clojure CI](https://github.com/n2o/reveal-cljs/workflows/Clojure%20CI/badge.svg)
 [![https://github.com/n2o/reveal-cljs/releases](https://img.shields.io/github/release/n2o/reveal-cljs.svg)](https://github.com/n2o/reveal-cljs/releases)
 [![https://github.com/n2o/reveal-cljs/blob/master/LICENSE](https://img.shields.io/github/license/n2o/reveal-cljs.svg)](https://github.com/n2o/reveal-cljs/blob/master/LICENSE)
 
