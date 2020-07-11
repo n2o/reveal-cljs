@@ -4,7 +4,9 @@
   "description": "A ClojureScript wrapper for reveal.js",
   "main": "reveal.core",
   "dependencies": {
-    "reveal.js": "hakimel/reveal.js#3.9.2"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap-4-grid": "^3.4.0",
+    "reveal.js": "hakimel/reveal.js#4.0.2"
   },
   "devDependencies": {},
   "repository": {
