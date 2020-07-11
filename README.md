@@ -11,13 +11,15 @@ from reveal.js can be used. Check the
 [official documentation of reveal.js](https://revealjs.com/) for more
 information about it.
 
+🌅 Find a demo of reveal-cljs on this page: https://n2o.github.io/reveal-cljs/
+
 It uses Hiccup-syntax for templating, which makes it very easy to create slides.
 
 Start the project with `make repl` and see your live
 slides. Start *speaker-mode* by pressing <kbd>s</kbd> in the slides in your
 browser.
 
-![sample.png](img/sample.png)
+[![sample.png](img/sample.png)](https://n2o.github.io/reveal-cljs/)
 
 ## Requirements
 
