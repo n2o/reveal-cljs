@@ -5,7 +5,10 @@
 
 Inspired by the great work on [reveal.js](https://github.com/hakimel/reveal.js/)
 and the dislike towards JavaScript, this small project was created to provide a
-simple wrapper in ClojureScript to create awesome presentations.
+simple wrapper in ClojureScript to create awesome presentations. All features
+from reveal.js can be used. Check the
+[official documentation of reveal.js](https://revealjs.com/) for more
+information about it.
 
 It uses Hiccup-syntax for templating, which makes it very easy to create slides.
 
@@ -74,6 +77,16 @@ is all put into one task:
     make web
     
 Follow the steps on the terminal to find your prepared presentation.  
+
+## Software
+
+This project uses external packages, which can be removed by you, since most
+of them are not essential:
+
+* [reveal.js](https://github.com/hakimel/reveal.js) ([MIT License](https://github.com/hakimel/reveal.js/blob/master/LICENSE))
+* [Bootstrap Grid](https://github.com/twbs/bootstrap) ([MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE))
+* [Font-Awesome](https://github.com/FortAwesome/Font-Awesome/tree/master/js-packages/%40fortawesome/fontawesome-free) ([License](https://github.com/FortAwesome/Font-Awesome/blob/master/js-packages/%40fortawesome/fontawesome-free/LICENSE.txt))
+* [Clojure](https://clojure.org/) ([EPL-1.0 License](https://opensource.org/licenses/eclipse-1.0.php))
 
 ## License
 
