@@ -23,7 +23,7 @@ browser.
 
 ## Requirements
 
-Tested with AdoptOpenJDK 14, see CI Build Job for more details in the
+Tested with AdoptOpenJDK 16, see CI Build Job for more details in the
 environment.
 
 A JDK, [Clojure's CLI Tools](https://clojure.org/guides/getting_started), 
@@ -93,6 +93,6 @@ of them are not essential:
 
 ## License
 
-Copyright © 2016 – 2020 Christian Meter and Contributors
+Copyright © 2016 – 2021 Christian Meter and Contributors
 
 Distributed under the [MIT](LICENSE) License.
