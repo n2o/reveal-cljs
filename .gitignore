@@ -1,5 +1,6 @@
 *~
 .idea
+.lsp/
 /.DS_Store
 .DS_Store
 /classes
