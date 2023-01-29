@@ -29,6 +29,8 @@
   "Get all slides, set them as innerHTML and reinitialize Reveal.js"
   []
   (set! (.. (gdom/getElement "slides") -innerHTML) (convert))
-  (.initialize js/Reveal options)
-  (.setState js/Reveal (.getState js/Reveal)))
+  (let [state (and (.isReady js/Reveal) (.getState js/Reveal))]
+    (-> (.initialize js/Reveal options)
+        (.then #(when state (.setState js/Reveal state)))
+        (.then (fn [] "call your own init code from here")))))
 (main)
