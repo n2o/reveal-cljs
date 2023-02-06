@@ -12,6 +12,7 @@ clean:
 	@echo ":: Clean"
 	rm -rf target/
 	rm -rf resources/public/node_modules
+	rm -rf resources/public/cljs-out
 
 web: install
 	mkdir -p resources/public/cljs-out

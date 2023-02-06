@@ -32,5 +32,12 @@
   (let [state (and (.isReady js/Reveal) (.getState js/Reveal))]
     (-> (.initialize js/Reveal options)
         (.then #(when state (.setState js/Reveal state)))
+        (.then #(if (.isSpeakerNotes js/Reveal)
+                  ;; disable figwheel connection for speaker notes
+                  (when (.hasOwnProperty js/window "figwheel")
+                    (set! (.-connect js/figwheel.repl) (constantly "Disabled for speaker notes")))
+
+                  ;; trigger an event which will update the speaker notes
+                  (.dispatchEvent js/Reveal (clj->js {:type "resumed"}))))
         (.then (fn [] "call your own init code from here")))))
 (main)
