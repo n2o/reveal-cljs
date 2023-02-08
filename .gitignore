@@ -38,3 +38,4 @@ compiled
 *.log
 .cpcache/
 .cache/
+.calva/
