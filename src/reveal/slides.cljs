@@ -5,7 +5,9 @@
    [:h1 "reveal-cljs"]
    [:h5 "Create awesome Web-Presentations with ClojureScript"]
    [:p "Based on "
-    [:a {:href "http://lab.hakim.se/reveal-js/"} "reveal.js"]]])
+    [:a {:href "http://lab.hakim.se/reveal-js/"} "reveal.js"]]
+   [:aside.notes
+    [:ul [:li "Some notes"]]]])
 
 (def ^:private argument
   [:div.argument
