@@ -6,7 +6,7 @@ install:
 
 repl:
 	@echo ":: Start an interactive REPL"
-	clj -A:fig
+	clj -M:fig
 
 clean:
 	@echo ":: Clean"
@@ -24,4 +24,4 @@ web: install
 
 outdated:
 	@echo ":: Check for old dependencies"
-	clojure -Aoutdated -a outdated
+	clojure -M:outdated
