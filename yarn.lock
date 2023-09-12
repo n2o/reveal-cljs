@@ -12,6 +12,6 @@ bootstrap-4-grid@^3.4.0:
   resolved "https://registry.yarnpkg.com/bootstrap-4-grid/-/bootstrap-4-grid-3.4.0.tgz#62769a992484b9338a0e7219842c90aa70e62f54"
   integrity sha512-0bemukOEqWgO3Fd1SPFd2yUTEuqLBsPOfX7haNTw4iAbZAqW8doSbqu7VBo1sKBP73mAJMLquIgGCRVBPTDZ8A==
 
-reveal.js@hakimel/reveal.js#4.4.0:
-  version "4.4.0"
-  resolved "https://codeload.github.com/hakimel/reveal.js/tar.gz/f6f657b627f9703e32414d8d3f16fb49d41031cb"
+reveal.js@hakimel/reveal.js#4.6.0:
+  version "4.6.0"
+  resolved "https://codeload.github.com/hakimel/reveal.js/tar.gz/c5307462b08550d7e91fdfbfc7d7a6e7a5c131f9"

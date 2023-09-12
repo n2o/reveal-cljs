@@ -49,16 +49,6 @@ Everything in one command:
 
     make
 
-Or:
-
-Download the dependency reveal.js (specified in `package.json`) with:
-
-    make install
-
-or clone the repository:
-
-    git clone git@github.com:hakimel/reveal.js.git resources/public/node_modules/reveal.js
-
 To get an interactive development environment, run:
 
     make repl

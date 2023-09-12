@@ -1,12 +1,12 @@
 {
   "name": "reveal-cljs",
-  "version": "1.4.1",
+  "version": "4.6.0",
   "description": "A ClojureScript wrapper for reveal.js",
   "main": "reveal.core",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap-4-grid": "^3.4.0",
-    "reveal.js": "hakimel/reveal.js#4.4.0"
+    "reveal.js": "hakimel/reveal.js#4.6.0"
   },
   "devDependencies": {},
   "repository": {
