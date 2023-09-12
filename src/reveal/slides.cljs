@@ -68,6 +68,9 @@
     [:p "Watch the full tutorial of reveal.js "
      [:a {:href "https://revealjs.com"} "on revealjs.com"]]]])
 
+
+;; -----------------------------------------------------------------------------
+
 (defn all
   "Add here all slides you want to see in your presentation."
   []
