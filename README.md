@@ -83,6 +83,6 @@ of them are not essential:
 
 ## License
 
-Copyright © 2016 – 2023 Christian Meter and Contributors
+Copyright © 2016 – today Christian Meter and Contributors
 
 Distributed under the [MIT](LICENSE) License.
