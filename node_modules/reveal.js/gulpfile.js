@@ -1,13 +1,11 @@
 const pkg = require('./package.json')
-const path = require('path')
 const glob = require('glob')
 const yargs = require('yargs')
-const colors = require('colors')
 const through = require('through2');
 const qunit = require('node-qunit-puppeteer')
 
 const {rollup} = require('rollup')
-const {terser} = require('rollup-plugin-terser')
+const terser = require('@rollup/plugin-terser')
 const babel = require('@rollup/plugin-babel').default
 const commonjs = require('@rollup/plugin-commonjs')
 const resolve = require('@rollup/plugin-node-resolve').default
@@ -31,7 +29,7 @@ const banner = `/*!
 * ${pkg.homepage}
 * MIT licensed
 *
-* Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se
+* Copyright (C) 2011-2024 Hakim El Hattab, https://hakim.se
 */\n`
 
 // Prevents warnings from opening too many test pages
