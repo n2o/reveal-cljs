@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@fortawesome/fontawesome-free@^6.4.2":
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.4.2.tgz#36b6a9cb5ffbecdf89815c94d0c0ffa489ac5ecb"
-  integrity sha512-m5cPn3e2+FDCOgi1mz0RexTUvvQibBebOUlUlW0+YrMjDTPkiJ6VTKukA1GRsvRw+12KyJndNjj0O4AgTxm2Pg==
+"@fortawesome/fontawesome-free@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.6.0.tgz#0e984f0f2344ee513c185d87d77defac4c0c8224"
+  integrity sha512-60G28ke/sXdtS9KZCpZSHHkCbdsOGEhIUGlwq6yhY74UpTiToIh8np7A8yphhM4BWsvNFtIvLpi4co+h9Mr9Ow==
 
 bootstrap-4-grid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/bootstrap-4-grid/-/bootstrap-4-grid-3.4.0.tgz#62769a992484b9338a0e7219842c90aa70e62f54"
   integrity sha512-0bemukOEqWgO3Fd1SPFd2yUTEuqLBsPOfX7haNTw4iAbZAqW8doSbqu7VBo1sKBP73mAJMLquIgGCRVBPTDZ8A==
 
-reveal.js@hakimel/reveal.js#4.6.0:
-  version "4.6.0"
-  resolved "https://codeload.github.com/hakimel/reveal.js/tar.gz/c5307462b08550d7e91fdfbfc7d7a6e7a5c131f9"
+reveal.js@hakimel/reveal.js#5.1.0:
+  version "5.1.0"
+  resolved "https://codeload.github.com/hakimel/reveal.js/tar.gz/6b8c64ffa8fddd9ed4bcd92bcfd37b67ba410244"
