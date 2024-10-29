@@ -13,9 +13,9 @@ information about it.
 
 🌅 Find a demo of reveal-cljs on this page: https://n2o.github.io/reveal-cljs/
 
-It uses Hiccup-syntax for templating, which makes it very easy to create slides.
+It uses Hiccup-syntax for templates, which makes it very easy to create slides.
 
-Start the project with `make repl` and see your live
+Start the project with `yarn dev` and see your live
 slides. Start _speaker-mode_ by pressing <kbd>s</kbd> in the slides in your
 browser.
 
@@ -26,8 +26,8 @@ browser.
 Tested with AdoptOpenJDK 16, see CI Build Job for more details in the
 environment.
 
-A JDK, [Clojure's CLI Tools](https://clojure.org/guides/getting_started),
-[yarn](https://yarnpkg.com/en/) and `make` are necessary to
+A JDK, [Clojure's CLI Tools](https://clojure.org/guides/getting_started) and
+[yarn](https://yarnpkg.com/en/) are necessary to
 build and run the project.
 
 ## Usage
@@ -47,11 +47,11 @@ Then start the development server as seen in the Setup section.
 
 Everything in one command:
 
-    make
+    yarn install
 
 To get an interactive development environment, run:
 
-    make repl
+    yarn dev
 
 Figwheel opens your browser at [localhost:9500](http://localhost:9500/). This
 will auto compile and send all changes to the browser without the need to
@@ -67,7 +67,7 @@ By following these steps, you can publish the presentation on a regular
 server, which only needs to serve HTML, CSS and JavaScript Files. This
 is all put into one task:
 
-    make web
+    yarn build
 
 Follow the steps on the terminal to find your prepared presentation.
 

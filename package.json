@@ -3,6 +3,12 @@
   "version": "1.6.0",
   "description": "A ClojureScript wrapper for reveal.js",
   "main": "reveal.core",
+  "scripts": {
+    "dev": "clj -M:fig",
+    "clean": "rm -rf target/ resources/public/cljs-out resources/public/node_modules",
+    "build": "mkdir -p resources/public/cljs-out && clojure -M:fig/simple && cp target/public/cljs-out/dev-main.js resources/public/cljs-out",
+    "clj:outdated": "clojure -M:outdated"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "bootstrap-4-grid": "^3.4.0",
