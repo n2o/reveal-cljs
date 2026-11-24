@@ -39,3 +39,4 @@ compiled
 .cpcache/
 .cache/
 .calva/
+.rebel_readline_history

@@ -71,6 +71,14 @@ is all put into one task:
 
 Follow the steps on the terminal to find your prepared presentation.
 
+## Run Tests
+
+    yarn test    # unit tests
+    yarn e2e     # build, then browser tests (Playwright, Chromium)
+
+The browser tests live in a separate npm project `e2e/`, to keep their dependencies out of the deployment.
+
+
 ## Software
 
 This project uses external packages, which can be removed by you, since most
