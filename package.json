@@ -4,15 +4,17 @@
   "description": "A ClojureScript wrapper for reveal.js",
   "main": "reveal.core",
   "scripts": {
-    "dev": "clj -M:fig",
+    "dev": "mkdir -p target && clj -M:fig",
+    "test": "clojure -M:test && node target/test-out/test.js",
+    "e2e": "yarn build && cd e2e && ([ -d node_modules ] || npm ci) && npx playwright install chromium && npm test",
     "clean": "rm -rf target/ resources/public/cljs-out resources/public/node_modules",
     "build": "mkdir -p resources/public/cljs-out && clojure -M:fig/simple && cp target/public/cljs-out/dev-main.js resources/public/cljs-out",
     "clj:outdated": "clojure -M:outdated"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "bootstrap-4-grid": "^3.4.0",
-    "reveal.js": "hakimel/reveal.js#5.1.0"
+    "reveal.js": "hakimel/reveal.js#6.0.2"
   },
   "devDependencies": {},
   "repository": {

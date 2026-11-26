@@ -2,60 +2,48 @@ name: Clojure CI
 on: [push]
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v3
-        with:
-          distribution: "temurin"
-          java-version: "21"
-      - name: Setup Clojure
-        uses: DeLaGuardo/setup-clojure@3.4
-        with:
-          cli: 1.10.1.693
-
-      - name: Build Project
-        run: clojure -A:fig/simple
-
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: DeLaGuardo/clojure-lint-action@master
-        continue-on-error: true
-        with:
-          clj-kondo-args: --lint src
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v6
         with:
           distribution: "temurin"
           java-version: "21"
       - name: Setup Clojure
-        uses: DeLaGuardo/setup-clojure@3.4
+        uses: DeLaGuardo/setup-clojure@13.7.0
         with:
-          cli: 1.10.1.693
-      - uses: actions/setup-node@v3
+          cli: latest
+      - uses: actions/setup-node@v7
         with:
-          node-version: "20"
+          node-version-file: ".nvmrc"
           cache: "yarn"
 
       - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
+        run: yarn install
+
+      - name: Run tests
+        run: yarn test
 
       - name: Build Project
         run: yarn build
+
+      - name: Install E2E dependencies
+        working-directory: e2e
+        run: npm ci
+
+      - name: Install Playwright browser
+        working-directory: e2e
+        run: npx playwright install --with-deps chromium
+
+      - name: Run E2E tests
+        working-directory: e2e
+        run: npm test
+
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: resources/public # The folder the action should deploy.
